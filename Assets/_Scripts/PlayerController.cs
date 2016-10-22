@@ -1,4 +1,15 @@
-﻿using UnityEngine;
+﻿/*Source File name PlayerController
+ * Author's Name yours truly Ibrahim Natchee (Abraham)
+ * StudentID 300767752
+ * Date Last Modified 10/22/2016
+ * last modified by again Ibrahim Natchee
+ * program descirption is simply the controllers by what the plaayer is supposed to be acting on and how the mouse follows
+ * Revision History every five minutes by an anxious student, 10/22/2016
+*/
+
+
+
+using UnityEngine;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
@@ -44,6 +55,7 @@ public class PlayerController : MonoBehaviour {
 		gameObject.GetComponent<Transform>().position = this._newPosition;
 	}
 
+    //check boundaries
 	private void _BoundaryCheck() {
 		if (this._newPosition.x < this.boundary.xMin) {
 			this._newPosition.x = this.boundary.xMin;

@@ -1,4 +1,14 @@
-﻿using UnityEngine;
+﻿/*Source File name EnemyController
+ * Author's Name yours truly Ibrahim Natchee (Abraham)
+ * StudentID 300767752
+ * Date Last Modified 10/22/2016
+ * last modified by again Ibrahim Natchee
+ * program descirption is simply the controllers by what the enemy is supposed to be acting on and where it respawns
+ * Revision History every five minutes by an anxious student, 10/22/2016
+*/
+
+
+using UnityEngine;
 using System.Collections;
 
 [System.Serializable]
@@ -47,6 +57,7 @@ public class EnemyController : MonoBehaviour {
 		gameObject.GetComponent<Transform> ().position = resetPosition;
         
 }
+    //when the tai fighter hits polayer it resets the tai fighter
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
